@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.finalproject.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_rosterFragment"
+            app:destination="@id/rosterFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_coachingFragment"
+            app:destination="@id/coachingFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_gamesFragment"
+            app:destination="@id/gamesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/coachingFragment"
+        android:name="com.example.finalproject.CoachingFragment"
+        android:label="fragment_coaching"
+        tools:layout="@layout/fragment_coaching" />
+    <fragment
+        android:id="@+id/rosterFragment"
+        android:name="com.example.finalproject.RosterFragment"
+        android:label="fragment_roster"
+        tools:layout="@layout/fragment_roster" />
+    <fragment
+        android:id="@+id/gamesFragment"
+        android:name="com.example.finalproject.GamesFragment"
+        android:label="fragment_games"
+        tools:layout="@layout/fragment_games" />
+</navigation>
