@@ -1,5 +1,12 @@
 <resources>
     <string name="app_name">FinalProject</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name = "title">Abington Heights Field Hockey</string>
+    <string name = "info"> 2022 Season</string>
+    <string name = "roster">Roster</string>
+    <string name = "coach"> Coaching</string>
+    <string name = "games"> Games</string>
+    <string name = "coachingStaff">Coaching Staff</string>
+    <string name = "coachG">Coach Glenn</string>
+    <string name = "coachZ"> Coach Z</string>
 </resources>
