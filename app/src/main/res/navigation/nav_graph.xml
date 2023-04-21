@@ -24,7 +24,11 @@
         android:id="@+id/coachingFragment"
         android:name="com.example.finalproject.CoachingFragment"
         android:label="fragment_coaching"
-        tools:layout="@layout/fragment_coaching" />
+        tools:layout="@layout/fragment_coaching" >
+        <argument
+            android:name="nameArg"
+            app:argType="string" />
+    </fragment>
     <fragment
         android:id="@+id/rosterFragment"
         android:name="com.example.finalproject.RosterFragment"

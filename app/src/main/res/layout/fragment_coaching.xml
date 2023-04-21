@@ -12,49 +12,72 @@
         android:id="@+id/G"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
         android:text="@string/coachG"
+        android:textSize="22dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/title2"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.261" />
+        app:layout_constraintVertical_bias="0.25"
+        app:fontFamily="@font/artifika"
+        android:textColor="@color/navy"/>
 
     <TextView
         android:id="@+id/title2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:text="@string/coachingStaff"
+        android:textColor="@color/navy"
+        android:textSize="28dp"
+        app:fontFamily="@font/artifika"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.15"
-        android:textColor="@color/navy"
-        android:textSize="28"
-        android:gravity="center"
-        app:fontFamily="@font/artifika"/>
+        app:layout_constraintVertical_bias="0.15" />
 
     <TextView
         android:id="@+id/Z"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/coachZ"
+        android:layout_marginRight="30dp"
+        android:textSize="22dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/title2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.261" />
+        app:layout_constraintVertical_bias="0.25"
+        app:fontFamily="@font/artifika"
+        android:textColor="@color/navy"/>
 
     <Button
         android:id="@+id/link"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="text"
+        android:text="AHFH School Website"
+        app:backgroundTint="@color/navy"
+        app:fontFamily="@font/artifika"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title2" />
+
+    <TextView
+        android:id="@+id/Welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="42dp"
+        app:layout_constraintBottom_toTopOf="@+id/title2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:fontFamily="@font/artifika"
+        android:textColor="@color/navy"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,6 +19,9 @@ class CoachingFragment : Fragment() {
     ): View? {
         _binding = FragmentRosterBinding.inflate(inflater, container, false)
         val rootView = binding.root
+
+        val args = CoachingFragmentArgs.fromBundle(requireArguments())
+        binding.Welcome.text = "Welcome ${args.nameArg}"
         return rootView
     }
 }
