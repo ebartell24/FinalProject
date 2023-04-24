@@ -26,11 +26,13 @@ class HomeFragment : Fragment() {
             rootView.findNavController().navigate(action)
         }
         binding.roster.setOnClickListener(){
-            val action = HomeFragmentDirections.actionHomeFragmentToRosterFragment()
+            val guest = binding.enterName.text.toString()
+            val action = HomeFragmentDirections.actionHomeFragmentToRosterFragment(guest)
             rootView.findNavController().navigate(action)
         }
         binding.games.setOnClickListener(){
-            val action = HomeFragmentDirections.actionHomeFragmentToGamesFragment()
+            val guest = binding.enterName.text.toString()
+            val action = HomeFragmentDirections.actionHomeFragmentToGamesFragment(guest)
             rootView.findNavController().navigate(action)
         }
 

@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:text="@string/title"
         android:textColor="@color/navy"
-        android:textSize="28dp"
+        android:textSize="32dp"
         android:gravity="center"
         app:fontFamily="@font/artifika"
         app:layout_constraintBottom_toTopOf="@+id/info"
@@ -27,10 +27,10 @@
         android:id="@+id/info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="232dp"
+        android:layout_marginBottom="264dp"
         android:text="@string/info"
         android:textColor="@color/navy"
-        android:textSize="23dp"
+        android:textSize="30dp"
         app:fontFamily="@font/artifika"
         app:layout_constraintBottom_toTopOf="@+id/coaching"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,27 +41,27 @@
         android:id="@+id/coaching"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="280dp"
+        android:layout_marginBottom="192dp"
         android:text="@string/coach"
+        app:backgroundTint="@color/navy"
+        app:fontFamily="@font/artifika"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/games"
         app:layout_constraintHorizontal_bias="0.5"
-        app:backgroundTint="@color/navy"
-        app:layout_constraintStart_toEndOf="@+id/roster"
-        app:fontFamily="@font/artifika"/>
+        app:layout_constraintStart_toEndOf="@+id/roster" />
 
     <Button
         android:id="@+id/games"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="232dp"
+        android:layout_marginTop="264dp"
         android:text="@string/games"
+        app:backgroundTint="@color/navy"
+        app:fontFamily="@font/artifika"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/coaching"
-        app:backgroundTint="@color/navy"
-        app:layout_constraintTop_toBottomOf="@+id/info"
-        app:fontFamily="@font/artifika"/>
+        app:layout_constraintTop_toBottomOf="@+id/info" />
 
     <EditText
         android:id="@+id/enterName"
@@ -70,27 +70,40 @@
         android:ems="10"
         android:hint="Name"
         android:inputType="textPersonName"
+        android:textColor="@color/navy"
+        app:fontFamily="@font/artifika"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/coaching"
-        app:layout_constraintVertical_bias="0.1"
-        app:fontFamily="@font/artifika"
-        android:textColor="@color/navy"
-        />
+        app:layout_constraintVertical_bias="0.3" />
 
     <Button
         android:id="@+id/roster"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="232dp"
+        android:layout_marginTop="264dp"
         android:text="@string/roster"
         app:backgroundTint="@color/navy"
+        app:fontFamily="@font/artifika"
         app:layout_constraintEnd_toStartOf="@+id/coaching"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="280dp"
+        android:layout_height="218dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/comet"
+        app:layout_constraintBottom_toTopOf="@+id/coaching"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/info"
-        app:fontFamily="@font/artifika"/>
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -33,10 +33,18 @@
         android:id="@+id/rosterFragment"
         android:name="com.example.finalproject.RosterFragment"
         android:label="fragment_roster"
-        tools:layout="@layout/fragment_roster" />
+        tools:layout="@layout/fragment_roster" >
+        <argument
+            android:name="nameArg"
+            app:argType="string" />
+    </fragment>
     <fragment
         android:id="@+id/gamesFragment"
         android:name="com.example.finalproject.GamesFragment"
         android:label="fragment_games"
-        tools:layout="@layout/fragment_games" />
+        tools:layout="@layout/fragment_games" >
+        <argument
+            android:name="nameArg"
+            app:argType="string" />
+    </fragment>
 </navigation>

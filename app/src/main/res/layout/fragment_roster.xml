@@ -3,6 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".RosterFragment"
-    android:background="@color/lightGray"
-    />
+    android:background="@color/lightGray">
+
+    <TextView
+        android:id="@+id/welcome3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:fontFamily="@font/artifika"
+        android:textColor="@color/navy"
+        android:textSize = "20dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

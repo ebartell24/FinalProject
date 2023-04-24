@@ -21,6 +21,9 @@ class RosterFragment : Fragment() {
     ): View? {
         _binding = FragmentRosterBinding.inflate(inflater, container, false)
         val rootView = binding.root
+
+        val args = RosterFragmentArgs.fromBundle(requireArguments())
+        binding.welcome3.text = "Welcome ${args.nameArg}"
         return rootView
     }
 
