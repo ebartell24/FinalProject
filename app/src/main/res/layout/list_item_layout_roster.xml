@@ -16,34 +16,57 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textViewCourseTitle"
+        android:id="@+id/playerName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginBottom="8dp"
-        tools:text="Pretend Course Title"
+        tools:text="Player Name"
         android:textSize="24sp"
         app:layout_constraintLeft_toRightOf="@id/imageViewCourseImage"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textViewCourseInstructor"
+        android:id="@+id/playerPosition"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
-        tools:text="Pretend Course Instructor"
+        tools:text="Player Position"
         android:textSize="18sp"
         app:layout_constraintLeft_toRightOf="@id/imageViewCourseImage"
-        app:layout_constraintTop_toBottomOf="@id/textViewCourseTitle" />
+        app:layout_constraintTop_toBottomOf="@id/playerName" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
         android:background="#000000"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textViewCourseInstructor" />
+        app:layout_constraintTop_toBottomOf="@id/playerPosition" />
+
+    <TextView
+        android:id="@+id/playerGradYear"
+        android:layout_width="wrap_content"
+        tools:text="Player Grad Year"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCourseImage"
+        app:layout_constraintTop_toBottomOf="@+id/playerPosition" />
+
+    <TextView
+        android:id="@+id/playerNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        tools:text="###"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/playerPosition"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
