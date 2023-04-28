@@ -7,13 +7,15 @@
     android:padding="8dp">
 
     <ImageView
-        android:id="@+id/imageViewCourseImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:src="@drawable/ic_launcher_foreground"
+        android:id="@+id/fhvector"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_baseline_sports_hockey_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
 
     <TextView
         android:id="@+id/playerName"
@@ -22,8 +24,10 @@
         android:layout_marginLeft="16dp"
         android:layout_marginBottom="8dp"
         tools:text="Player Name"
+        app:fontFamily="@font/artifika"
+        android:textColor="@color/navy"
         android:textSize="24sp"
-        app:layout_constraintLeft_toRightOf="@id/imageViewCourseImage"
+        app:layout_constraintLeft_toRightOf="@id/fhvector"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -32,9 +36,11 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
+        app:fontFamily="@font/artifika"
+        android:textColor="@color/lightBlue"
         tools:text="Player Position"
         android:textSize="18sp"
-        app:layout_constraintLeft_toRightOf="@id/imageViewCourseImage"
+        app:layout_constraintLeft_toRightOf="@id/fhvector"
         app:layout_constraintTop_toBottomOf="@id/playerName" />
 
     <TextView
@@ -55,18 +61,24 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintStart_toEndOf="@+id/imageViewCourseImage"
+        app:fontFamily="@font/artifika"
+        android:textColor="@color/navy"
+        app:layout_constraintStart_toEndOf="@+id/fhvector"
         app:layout_constraintTop_toBottomOf="@+id/playerPosition" />
 
     <TextView
         android:id="@+id/playerNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/lightBlue"
         android:textSize="24sp"
-        tools:text="###"
+        app:fontFamily="@font/artifika"
         app:layout_constraintBottom_toBottomOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.692"
         app:layout_constraintStart_toEndOf="@+id/playerPosition"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.549"
+        tools:text="###" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
