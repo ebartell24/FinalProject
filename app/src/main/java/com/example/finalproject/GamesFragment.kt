@@ -23,6 +23,11 @@ class GamesFragment : Fragment() {
 
         val args = GamesFragmentArgs.fromBundle(requireArguments())
         binding.welcome2.text = "Welcome ${args.nameArg}"
+
+        val games = listOf(Games("", "", "", ""), Games("", "", "", ""))
+
+        val mAdaptor = gamesAdapter(games)
+        binding.recyclerView.adapter = mAdaptor
         return rootView
     }
 
