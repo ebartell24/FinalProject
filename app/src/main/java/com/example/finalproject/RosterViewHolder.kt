@@ -10,9 +10,9 @@ class RosterViewHolder(val binding: ListItemLayoutRosterBinding):
 
        fun bindRoster(roster: Roster){
            currentRosterSpot = roster
-           binding.playerName.text = currentRosterSpot.name
-           binding.playerNumber.text = "# ${currentRosterSpot.number}"
-           binding.playerPosition.text = currentRosterSpot.position
-           binding.playerGradYear.text = currentRosterSpot.gradYear
+           binding.one.text = currentRosterSpot.name
+           binding.four.text = "# ${currentRosterSpot.number}"
+           binding.two.text = currentRosterSpot.position
+           binding.three.text = currentRosterSpot.gradYear
        }
 }

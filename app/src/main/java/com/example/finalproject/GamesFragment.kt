@@ -24,10 +24,21 @@ class GamesFragment : Fragment() {
         val args = GamesFragmentArgs.fromBundle(requireArguments())
         binding.welcome2.text = "Welcome ${args.nameArg}"
 
-        val games = listOf(Games("", "", "", ""), Games("", "", "", ""))
+        val games = listOf(
+            Games("Abington vs Delaware Valley", "08/26/22 at 4:15PM", "4-0", "WIN!"),
+            Games("Abington vs Berwick", "09/06/22 at 4:15PM", "9-0", "WIN!"),
+            Games("Abington vs Honesdale", "09/09/22 at 4:15PM", "0-1", "LOSS :("),
+            Games("Abington vs Pittston Area", "09/15/22 at 4:15PM", "2-1", "WIN!"),
+            Games("Abington vs Wallenpaupack", "09/22/22 at 4:15PM", "3-0", "WIN!"),
+            Games ("Abington vs Lackawanna Trail", "09/23/22 at 4:15PM", "1-4", "LOSS :("),
+            Games ("Abington vs Nanticoke", "09/27/22 at 5:15PM", "6-0", "WIN!"),
+            Games ("Abington vs Holy Redeemer", "10/06/22 at 4:15PM", "3-0", "WIN!"),
+            Games ("Abington vs Tunkhannock", "10/14/22 at 4:00PM", "4-0", "WIN!"),
+            Games ("Abington vs Selinsgrove", "10/27/22 at 7:00PM", "1-2", "LOSS :(")
+        )
 
         val mAdaptor = gamesAdapter(games)
-        binding.recyclerView.adapter = mAdaptor
+        binding.recyclerView2.adapter = mAdaptor
         return rootView
     }
 

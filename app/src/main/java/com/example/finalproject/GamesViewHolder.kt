@@ -9,10 +9,10 @@ class GamesViewHolder(val binding: ListItemLayoutGamesBinding):
 
         fun bindGames(games: Games){
             currentGame = games
-            binding.opponent.text = currentGame.opponent
-            binding.time.text = currentGame.time
-            binding.score.text = currentGame.score
-            binding.winLose.text = currentGame.winLose
+            binding.one.text = currentGame.opponent
+            binding.two.text = currentGame.time
+            binding.three.text = currentGame.score
+            binding.four.text = currentGame.winLose
 
         }
 }
