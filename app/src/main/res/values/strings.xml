@@ -11,5 +11,8 @@
     <string name="coachZ"> Coach Z</string>
     <string name="website">https://ahsdathletics.org/main/teamschedule/id/3807358/seasonid/4751470</string>
     <string name="phoneNumber">5705855330</string>
+    <string name = "coachSnackBar">Coaching Information and Other Information</string>
+    <string name = "rosterToast">AHFH Roster</string>
+    <string name = "gamesToast"> AHFH Games</string>
 
 </resources>
