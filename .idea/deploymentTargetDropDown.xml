@@ -7,11 +7,11 @@
         <deviceKey>
           <Key>
             <type value="VIRTUAL_DEVICE_PATH" />
-            <value value="C:\Users\bartelle24\.android\avd\springEmulator2023.avd" />
+            <value value="C:\Users\bartelle24\.android\avd\april23.avd" />
           </Key>
         </deviceKey>
       </Target>
     </targetSelectedWithDropDown>
-    <timeTargetWasSelectedWithDropDown value="2023-04-20T16:36:03.792527100Z" />
+    <timeTargetWasSelectedWithDropDown value="2023-05-04T16:21:30.670296100Z" />
   </component>
 </project>

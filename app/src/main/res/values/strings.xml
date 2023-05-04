@@ -6,7 +6,7 @@
     <string name="roster">Roster</string>
     <string name="coach"> Coaching</string>
     <string name="games"> Games</string>
-    <string name="coachingStaff">Coaching Staff</string>
+    <string name="coachingStaff">Coaching Staff:</string>
     <string name="coachG">Coach Glenn</string>
     <string name="coachZ"> Coach Z</string>
     <string name="website">https://ahsdathletics.org/main/teamschedule/id/3807358/seasonid/4751470</string>
@@ -14,5 +14,6 @@
     <string name = "coachSnackBar">Coaching Information and Other Information</string>
     <string name = "rosterToast">AHFH Roster</string>
     <string name = "gamesToast"> AHFH Games</string>
+    <string name = "relatedInfo">Related Information:</string>
 
 </resources>

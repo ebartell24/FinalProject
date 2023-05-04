@@ -5,7 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.viewModels
 import androidx.core.app.Person.fromBundle
+import androidx.fragment.app.activityViewModels
+import androidx.fragment.app.viewModels
 import com.example.finalproject.databinding.FragmentHomeBinding
 import com.example.finalproject.databinding.FragmentRosterBinding
 
@@ -13,6 +16,8 @@ class RosterFragment : Fragment() {
 
     private var _binding: FragmentRosterBinding? = null
     private val binding get() = _binding!!
+    //private val viewModel:ViewModel by activityViewModels()
+
 
 
     override fun onCreateView(
