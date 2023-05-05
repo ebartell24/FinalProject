@@ -12,16 +12,17 @@
         android:id="@+id/G"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingLeft="60dp"
+        android:padding="18dp"
         android:text="@string/coachG"
         android:textColor="@color/lightBlue"
         android:textSize="22dp"
         app:fontFamily="@font/artifika"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/title2"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25" />
+        app:layout_constraintVertical_bias="0.255" />
 
     <TextView
         android:id="@+id/title2"
@@ -38,17 +39,17 @@
         android:id="@+id/Z"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="30dp"
+        android:padding="18dp"
         android:text="@string/coachZ"
         android:textColor="@color/lightBlue"
         android:textSize="22dp"
         app:fontFamily="@font/artifika"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/title2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25" />
+        app:layout_constraintVertical_bias="0.255" />
 
     <Button
         android:id="@+id/link"

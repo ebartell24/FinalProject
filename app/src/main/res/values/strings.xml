@@ -11,9 +11,13 @@
     <string name="coachZ"> Coach Z</string>
     <string name="website">https://ahsdathletics.org/main/teamschedule/id/3807358/seasonid/4751470</string>
     <string name="phoneNumber">5705855330</string>
-    <string name = "coachSnackBar">Coaching Information and Other Information</string>
-    <string name = "rosterToast">AHFH Roster</string>
-    <string name = "gamesToast"> AHFH Games</string>
-    <string name = "relatedInfo">Related Information:</string>
-
+    <string name="coachSnackBar">Coaching Information and Other Information</string>
+    <string name="rosterToast">AHFH Roster</string>
+    <string name="gamesToast"> AHFH Games</string>
+    <string name="relatedInfo">Related Information:</string>
+    <string name = "aboutRosterPlayers"> About AHFH Players</string>
+    <string name = "gradYearInf">On this years starting roster there are 13 varsity athletes. Two of them will graduate in 2023.
+    Seven of them will graduate in 2024. Two of them will graduate in 2025, and two of them will graduate in 2026.</string>
+    <string name = "positionInfo"> Out of the 13 athletes on this roster, three of them play forward, four of them play midfield,
+    five of them play defense, and one plays goalie. </string>
 </resources>
