@@ -1,10 +1,10 @@
 package com.example.finalproject
 
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import androidx.navigation.findNavController
+import androidx.navigation.ui.NavigationUI
 import com.example.finalproject.databinding.FragmentHomeBinding
 import com.example.finalproject.databinding.FragmentMainBinding
 
@@ -20,11 +20,8 @@ class MainFragment : Fragment() {
         _binding = FragmentMainBinding.inflate(inflater, container, false)
         val rootView = binding.root
 
-
-
-
-
         return rootView
     }
+
 
 }

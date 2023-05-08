@@ -15,9 +15,12 @@
     <string name="rosterToast">AHFH Roster</string>
     <string name="gamesToast"> AHFH Games</string>
     <string name="relatedInfo">Related Information:</string>
-    <string name = "aboutRosterPlayers"> About AHFH Players</string>
-    <string name = "gradYearInf">On this years starting roster there are 13 varsity athletes. Two of them will graduate in 2023.
+    <string name="aboutRosterPlayers"> About AHFH Players</string>
+    <string name="gradYearInf">On this years starting roster there are 13 varsity athletes. Two of them will graduate in 2023.
     Seven of them will graduate in 2024. Two of them will graduate in 2025, and two of them will graduate in 2026.</string>
-    <string name = "positionInfo"> Out of the 13 athletes on this roster, three of them play forward, four of them play midfield,
+    <string name="positionInfo"> Out of the 13 athletes on this roster, three of them play forward, four of them play midfield,
     five of them play defense, and one plays goalie. </string>
+    <string name = "aboutGamesTitle"> About AHFH Games</string>
+    <string name = "aboutGameInfo">This past 2022 season the field hockey team went 12–2. The teams only
+    two losses were to Wyoming Area during the regular season, and then to Selinsgrove during the playoffs.</string>
 </resources>
