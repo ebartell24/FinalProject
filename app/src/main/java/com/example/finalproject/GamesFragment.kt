@@ -39,6 +39,8 @@ class GamesFragment : Fragment() {
 
         val mAdaptor = gamesAdapter(games)
         binding.recyclerView2.adapter = mAdaptor
+
+        setHasOptionsMenu(true)
         return rootView
     }
 
