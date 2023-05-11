@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.findNavController
 import com.example.finalproject.databinding.FragmentHomeBinding
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
 
 class HomeFragment : Fragment() {
@@ -42,6 +43,8 @@ class HomeFragment : Fragment() {
             Toast.makeText(activity, R.string.gamesToast, Toast.LENGTH_SHORT).show()
             rootView.findNavController().navigate(action)
         }
+
+
 
         return rootView
     }

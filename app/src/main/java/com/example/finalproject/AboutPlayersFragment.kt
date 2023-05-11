@@ -21,21 +21,22 @@ class AboutPlayers : Fragment() {
     ): View? {
         _binding = FragmentAboutPlayersBinding.inflate(inflater, container, false)
         val rootView = binding.root
-
 //ALERT DIALOG CODE
-//        viewModel.gameWon.observe(viewLifecycleOwner) { gameWon ->
-//        if (gameWon) {
-//            MaterialAlertDialogBuilder(requireContext()).setTitle(R.string.Congrats)
-//                .setMessage(R.string.win)
-//                .setPositiveButton("yes") { dialog, which->
-//                    viewModel.reset()
+//        viewModel.clickedAbout.observe(viewLifecycleOwner) { clickedAbout: Boolean->
+//            if (clickedAbout) {
+//                MaterialAlertDialogBuilder(requireContext()).setTitle(R.string.Congrats)
+//                    .setMessage(R.string.win)
+//                    .setPositiveButton("yes") { dialog, which->
+//                        viewModel.reset()
 //
-//                }.setNegativeButton("no") { dialog, which ->
-//                    val action = AboutPlayersFragmentDirections.actionAboutPlayerToHomeFragment()
-//                    binding.root.findNavController().navigate(action)
-//                }.show()
-
+//                    }.setNegativeButton("no") { dialog, which ->
+//                        val action = AboutPlayersFragmentDirections.actionAboutPlayersFragmentToHomeFragment()
+//                        binding.root.findNavController().navigate(action)
+//                    }.show()
+//
+//            }
 //        }
+
         return rootView
     }
 
