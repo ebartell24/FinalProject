@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.ViewModel
 import androidx.navigation.findNavController
 import com.example.finalproject.databinding.FragmentHomeBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -15,7 +16,7 @@ import com.google.android.material.snackbar.Snackbar
 class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
-   // private val viewModel:ViewModel by activityViewModels()
+   private val viewModel: ViewModel by activityViewModels()
 
 
     override fun onCreateView(

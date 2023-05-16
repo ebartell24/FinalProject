@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.ViewModel
 import androidx.navigation.findNavController
 import com.example.finalproject.databinding.FragmentCoachingBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -16,7 +17,7 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder
 class CoachingFragment : Fragment() {
     private var _binding: FragmentCoachingBinding? = null
     private val binding get() = _binding!!
-    //private val viewModel:ViewModel by activityViewModels()
+    private val viewModel: ViewModel by activityViewModels()
 
 
     override fun onCreateView(

@@ -3,6 +3,8 @@ package com.example.finalproject
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.ViewModel
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.example.finalproject.databinding.FragmentGamesBinding
@@ -12,6 +14,7 @@ import com.example.finalproject.databinding.FragmentRosterBinding
 class GamesFragment : Fragment() {
     private var _binding: FragmentGamesBinding? = null
     private val binding get() = _binding!!
+    private val viewModel: ViewModel by activityViewModels()
 
 
     override fun onCreateView(
