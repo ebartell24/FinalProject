@@ -6,11 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
-import androidx.fragment.app.viewModels
-import androidx.lifecycle.ViewModel
 import androidx.navigation.findNavController
 import com.example.finalproject.databinding.FragmentAboutPlayersBinding
-import com.example.finalproject.databinding.FragmentHomeBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class AboutPlayersFragment : Fragment() {
@@ -29,10 +26,10 @@ class AboutPlayersFragment : Fragment() {
         viewModel.clickedAbout.observe(viewLifecycleOwner) { clickedAbout: Boolean->
             if (clickedAbout) {
                 MaterialAlertDialogBuilder(requireContext()).setTitle(R.string.returnHome)
-                    .setPositiveButton("yes") { _, _:Int->
-                        val action = AboutPlayersFragmentDirections.actionAboutPlayersFragmentToHomeFragment()
+                    .setPositiveButton("yes") { _, _->
+                    binding.root.findNavController().navigateUp()
+                    }.setNegativeButton("no") { _, _->
                         binding.root.findNavController().navigateUp()
-                    }.setNegativeButton("no") { _, _:Int ->
                     }.show()
             }
         }

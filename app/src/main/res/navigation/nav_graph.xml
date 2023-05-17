@@ -52,9 +52,8 @@
     </fragment>
     <fragment
         android:id="@+id/aboutPlayers"
-        android:name="com.example.finalproject.AboutPlayers"
-        android:label="fragment_about_players"
-        tools:layout="@layout/fragment_about_players" />
+        android:name="com.example.finalproject.AboutPlayersFragment"
+        android:label="fragment_about_players" />
     <fragment
         android:id="@+id/aboutGames"
         android:name="com.example.finalproject.AboutGamesFragment"

@@ -6,7 +6,7 @@
     android:id="@+id/aboutPlayers"
     android:layout_height="match_parent"
     android:background="@color/lightGray"
-    tools:context=".AboutPlayers" >
+    tools:context=".AboutPlayersFragment" >
 
     <TextView
         android:id="@+id/aboutPlayerTitle"
