@@ -29,7 +29,6 @@ class AboutPlayersFragment : Fragment() {
                     .setPositiveButton("yes") { _, _->
                     binding.root.findNavController().navigateUp()
                     }.setNegativeButton("no") { _, _->
-                        binding.root.findNavController().navigateUp()
                     }.show()
             }
         }

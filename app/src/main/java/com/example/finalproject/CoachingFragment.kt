@@ -3,15 +3,13 @@ package com.example.finalproject
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.ViewModel
-import androidx.navigation.findNavController
 import com.example.finalproject.databinding.FragmentCoachingBinding
-import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 
 class CoachingFragment : Fragment() {
@@ -31,30 +29,42 @@ class CoachingFragment : Fragment() {
         binding.welcome.text = "Welcome ${args.nameArg}"
 
         binding.link.setOnClickListener{
-            openWebPage(R.string.website.toString())
+            openWebPage()
         }
 
         binding.call.setOnClickListener{
-            dialPhoneNumber(R.string.phoneNumber.toString())
+            dialPhoneNumber()
+        }
+
+        binding.email.setOnClickListener{
+            composeEmail()
         }
 
         return rootView
     }
 
-    fun openWebPage(url:String){
-        val webpage: Uri = Uri.parse(url)
-        val intent = Intent(Intent.ACTION_VIEW, webpage)
+    fun openWebPage(){
+        val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://ahsdathletics.org/main/teamschedule/id/3807358/seasonid/4751470"))
+        startActivity(browserIntent)
+
+    }
+
+    fun dialPhoneNumber(){
+        val intent = Intent(Intent.ACTION_DIAL).apply {
+            data = Uri.parse("tel:5705855330")
+        }
         if (activity?.let { intent.resolveActivity(it.packageManager) } != null) {
             startActivity(intent)
         }
     }
 
-    fun dialPhoneNumber(phoneNumber: String){
-        val intent = Intent(Intent.ACTION_DIAL).apply {
-            data = Uri.parse("tel:$phoneNumber")
-        }
-        if (activity?.let { intent.resolveActivity(it.packageManager) } != null) {
-            startActivity(intent)
+    fun composeEmail() {
+        val emailIntent = Intent(
+            Intent.ACTION_SENDTO, Uri.fromParts("mailto", "Carrg@ahsd.org", null));
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "AHFH Field Hockey");
+
+        if (activity?.let { emailIntent.resolveActivity(it.packageManager) } != null) {
+            startActivity(emailIntent)
         }
     }
 
