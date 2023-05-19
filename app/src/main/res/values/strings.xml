@@ -26,4 +26,6 @@
     Also, the team won the sportsmanship award. This award is given out by the refs. They all get together and choose the team who
     the believe had the best sportsmanship towards other teams.</string>
     <string name = "returnHome"> Would you like to return to the Home Screen?</string>
+    <string name = "numberText">Phone Number</string>
+    <string name = "mapText"> Map</string>
 </resources>

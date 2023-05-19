@@ -3,6 +3,8 @@ package com.example.finalproject
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.provider.CallLog.Calls.SUBJECT
+import android.provider.Telephony.BaseMmsColumns.SUBJECT
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -40,6 +42,10 @@ class CoachingFragment : Fragment() {
             composeEmail()
         }
 
+        binding.map.setOnClickListener{
+            showMap()
+        }
+
         return rootView
     }
 
@@ -65,6 +71,15 @@ class CoachingFragment : Fragment() {
 
         if (activity?.let { emailIntent.resolveActivity(it.packageManager) } != null) {
             startActivity(emailIntent)
+        }
+    }
+
+    fun showMap() {
+        val intent = Intent(Intent.ACTION_VIEW).apply {
+            data = Uri.parse("geo:41.492974642267725, -75.72510594638094")
+        }
+        if (activity?.let { intent.resolveActivity(it.packageManager) } != null) {
+            startActivity(intent)
         }
     }
 

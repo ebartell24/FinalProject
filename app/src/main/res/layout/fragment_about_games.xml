@@ -16,9 +16,10 @@
         android:text="@string/aboutGamesTitle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintVertical_bias="0.05" />
 
     <TextView
         android:id="@+id/record"
@@ -34,13 +35,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/aboutGamesTitle"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintVertical_bias="0.052" />
 
     <TextView
         android:id="@+id/awards"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="104dp"
+        android:layout_marginBottom="32dp"
         android:fontFamily="@font/artifika"
         android:gravity="center"
         android:text="@string/awards"
@@ -50,5 +51,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/teamPic"
+        android:layout_width="408dp"
+        android:layout_height="235dp"
+        android:layout_marginBottom="11dp"
+        android:src="@drawable/team"
+        app:layout_constraintBottom_toTopOf="@+id/awards"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/record"
+        app:layout_constraintVertical_bias="0.65" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
