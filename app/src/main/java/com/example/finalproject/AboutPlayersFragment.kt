@@ -22,16 +22,17 @@ class AboutPlayersFragment : Fragment() {
         _binding = FragmentAboutPlayersBinding.inflate(inflater, container, false)
         val rootView = binding.root
 
-//Alert Dialog Code
-        viewModel.clickedAbout.observe(viewLifecycleOwner) { clickedAbout: Boolean->
-            if (clickedAbout) {
-                MaterialAlertDialogBuilder(requireContext()).setTitle(R.string.returnHome)
-                    .setPositiveButton("yes") { _, _->
+
+        binding.backButton.setOnClickListener() {
+            MaterialAlertDialogBuilder(requireContext()).setTitle(R.string.returnHome)
+                .setPositiveButton("yes") { _, _ ->
                     binding.root.findNavController().navigateUp()
-                    }.setNegativeButton("no") { _, _->
-                    }.show()
-            }
+                    binding.root.findNavController().navigateUp()
+                }.setNegativeButton("no") { _, _ ->
+                    binding.root.findNavController().navigateUp()
+                }.show()
         }
+
         return rootView
     }
 }

@@ -29,14 +29,14 @@
         android:id="@+id/info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="264dp"
+        android:layout_marginBottom="276dp"
         android:text="@string/info"
         android:textColor="@color/navy"
         android:textSize="30dp"
         app:fontFamily="@font/artifika"
         app:layout_constraintBottom_toTopOf="@+id/coaching"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -56,7 +56,7 @@
         android:id="@+id/games"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="264dp"
+        android:layout_marginTop="276dp"
         android:text="@string/games"
         app:backgroundTint="@color/navy"
         app:fontFamily="@font/artifika"
@@ -85,7 +85,7 @@
         android:id="@+id/roster"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="264dp"
+        android:layout_marginTop="276dp"
         android:text="@string/roster"
         app:backgroundTint="@color/navy"
         app:fontFamily="@font/artifika"
@@ -103,9 +103,9 @@
         android:src="@drawable/comet"
         app:layout_constraintBottom_toTopOf="@+id/coaching"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/info"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.392" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

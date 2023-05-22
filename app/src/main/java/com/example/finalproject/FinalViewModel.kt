@@ -7,7 +7,5 @@ import androidx.lifecycle.ViewModel
 class FinalViewModel : ViewModel(){
 
 
-    private val _clickedAbout = MutableLiveData(false)
-    val clickedAbout: LiveData<Boolean>
-        get() = _clickedAbout
+
 }
