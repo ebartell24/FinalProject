@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.activity.viewModels
 import androidx.core.app.Person.fromBundle
 import androidx.fragment.app.activityViewModels
+import androidx.fragment.app.setFragmentResultListener
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModel
 import com.example.finalproject.databinding.FragmentHomeBinding
@@ -47,6 +48,9 @@ class RosterFragment : Fragment() {
 
         val mAdaptor = rosterAdapter(roster)
         binding.recyclerView.adapter = mAdaptor
+
+
+
         return rootView
     }
 
