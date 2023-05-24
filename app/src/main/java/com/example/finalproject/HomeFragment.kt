@@ -19,7 +19,6 @@ import com.google.android.material.snackbar.Snackbar
 class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
-   private val viewModel: ViewModel by activityViewModels()
 
 
     override fun onCreateView(
@@ -48,11 +47,11 @@ class HomeFragment : Fragment() {
             rootView.findNavController().navigate(action)
         }
 
-        //sending information back
-        setFragmentResultListener("requestKey") { requestKey, bundle ->
+//receiving passed back information
+        setFragmentResultListener("requestKey") { _, bundle ->
+            val replyText = bundle.getString("bundleKey")
+            binding.welcomeHome.text = replyText
         }
-
-
 
 
         return rootView

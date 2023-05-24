@@ -18,7 +18,6 @@ class RosterFragment : Fragment() {
 
     private var _binding: FragmentRosterBinding? = null
     private val binding get() = _binding!!
-    private val viewModel: ViewModel by activityViewModels()
 
 
 

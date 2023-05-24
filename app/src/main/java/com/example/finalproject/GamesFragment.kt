@@ -14,7 +14,6 @@ import com.example.finalproject.databinding.FragmentRosterBinding
 class GamesFragment : Fragment() {
     private var _binding: FragmentGamesBinding? = null
     private val binding get() = _binding!!
-    private val viewModel: ViewModel by activityViewModels()
 
 
     override fun onCreateView(

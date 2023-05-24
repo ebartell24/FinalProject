@@ -17,7 +17,6 @@ import com.example.finalproject.databinding.FragmentCoachingBinding
 class CoachingFragment : Fragment() {
     private var _binding: FragmentCoachingBinding? = null
     private val binding get() = _binding!!
-    private val viewModel: ViewModel by activityViewModels()
 
 
     override fun onCreateView(
@@ -48,7 +47,7 @@ class CoachingFragment : Fragment() {
 
         return rootView
     }
-
+//implicent intents
     fun openWebPage(){
         val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://ahsdathletics.org/main/teamschedule/id/3807358/seasonid/4751470"))
         startActivity(browserIntent)

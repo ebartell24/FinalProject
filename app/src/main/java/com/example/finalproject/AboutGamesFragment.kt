@@ -11,7 +11,6 @@ import com.example.finalproject.databinding.FragmentAboutPlayersBinding
 class AboutGamesFragment : Fragment() {
     private var _binding: FragmentAboutGamesBinding? = null
     private val binding get() = _binding!!
-    // private val viewModel:ViewModel by activityViewModels()  VIEWMODEL CODE
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

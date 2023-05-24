@@ -1,6 +1,7 @@
 package com.example.finalproject
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -15,7 +16,6 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder
 class AboutPlayersFragment : Fragment() {
     private var _binding: FragmentAboutPlayersBinding? = null
     private val binding get() = _binding!!
-    private val viewModel: FinalViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -24,7 +24,7 @@ class AboutPlayersFragment : Fragment() {
         _binding = FragmentAboutPlayersBinding.inflate(inflater, container, false)
         val rootView = binding.root
 
-
+        //alert dialog
         binding.backButton.setOnClickListener() {
             MaterialAlertDialogBuilder(requireContext()).setTitle(R.string.returnHome)
                 .setPositiveButton("yes") { _, _ ->
@@ -33,12 +33,13 @@ class AboutPlayersFragment : Fragment() {
                 }.setNegativeButton("no") { _, _ ->
                     binding.root.findNavController().navigateUp()
                 }.show()
-        }
-//sending information back
-        binding.backButton.setOnClickListener {
-            val reply = binding.backButton.text.toString()
+
+            //sending information back
+            //crashes here
+            val reply = R.string.returnHomeText
             setFragmentResult("requestKey", bundleOf("bundleKey" to reply))
             rootView.findNavController().navigateUp()
+
         }
 
         return rootView
