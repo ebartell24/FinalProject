@@ -28,6 +28,9 @@
         <argument
             android:name="nameArg"
             app:argType="string" />
+        <action
+            android:id="@+id/action_coachingFragment_to_galleryFragment"
+            app:destination="@id/galleryFragment" />
     </fragment>
     <fragment
         android:id="@+id/rosterFragment"
@@ -59,4 +62,9 @@
         android:name="com.example.finalproject.AboutGamesFragment"
         android:label="fragment_about_games"
         tools:layout="@layout/fragment_about_games" />
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.example.finalproject.GalleryFragment"
+        android:label="fragment_gallery"
+        tools:layout="@layout/fragment_gallery" />
 </navigation>

@@ -47,11 +47,7 @@ class HomeFragment : Fragment() {
             rootView.findNavController().navigate(action)
         }
 
-//receiving passed back information
-        setFragmentResultListener("requestKey") { _, bundle ->
-            val replyText = bundle.getString("bundleKey")
-            binding.welcomeHome.text = replyText
-        }
+
 
 
         return rootView

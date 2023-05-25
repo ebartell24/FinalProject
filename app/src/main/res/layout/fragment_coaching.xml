@@ -51,11 +51,11 @@
         app:layout_constraintVertical_bias="0.223" />
 
     <TextView
-        android:id="@+id/welcome"
+        android:id="@+id/welcomeName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="25dp"
+        android:layout_marginBottom="22dp"
         android:text=""
         android:textColor="@color/navy"
         android:textSize="20dp"

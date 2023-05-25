@@ -27,7 +27,7 @@ class CoachingFragment : Fragment() {
         val rootView = binding.root
 
         val args = CoachingFragmentArgs.fromBundle(requireArguments())
-        binding.welcome.text = "Welcome ${args.nameArg}"
+        binding.welcomeName.text = "Welcome ${args.nameArg}"
 
         binding.link.setOnClickListener{
             openWebPage()
@@ -47,7 +47,7 @@ class CoachingFragment : Fragment() {
 
         return rootView
     }
-//implicent intents
+
     fun openWebPage(){
         val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://ahsdathletics.org/main/teamschedule/id/3807358/seasonid/4751470"))
         startActivity(browserIntent)

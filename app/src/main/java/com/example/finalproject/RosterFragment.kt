@@ -1,16 +1,15 @@
 package com.example.finalproject
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.activity.viewModels
 import androidx.core.app.Person.fromBundle
-import androidx.fragment.app.activityViewModels
-import androidx.fragment.app.setFragmentResultListener
-import androidx.fragment.app.viewModels
+import androidx.core.os.bundleOf
+import androidx.fragment.app.*
 import androidx.lifecycle.ViewModel
+import androidx.navigation.findNavController
 import com.example.finalproject.databinding.FragmentHomeBinding
 import com.example.finalproject.databinding.FragmentRosterBinding
 
@@ -47,6 +46,15 @@ class RosterFragment : Fragment() {
 
         val mAdaptor = rosterAdapter(roster)
         binding.recyclerView.adapter = mAdaptor
+
+
+//        binding.recyclerView.setOnClickListener() {
+//            val reply = binding.welcome3.text.toString()
+//            setFragmentResult("REQUESTING_REPLY_KEY", bundleOf("REPLY_KEY" to reply))
+//            binding.root.findNavController().navigateUp()
+//        }
+
+
 
 
 

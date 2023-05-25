@@ -19,14 +19,13 @@
     Seven of them will graduate in 2024. Two of them will graduate in 2025, and two of them will graduate in 2026.</string>
     <string name="positionInfo"> Out of the 13 athletes on this roster, three of them play forward, four of them play midfield,
     five of them play defense, and one plays goalie. </string>
-    <string name = "aboutGamesTitle"> About AHFH Games</string>
-    <string name = "aboutGameInfo">This past 2022 season the field hockey team went 12–2. The teams only
+    <string name="aboutGamesTitle"> About AHFH Games</string>
+    <string name="aboutGameInfo">This past 2022 season the field hockey team went 12–2. The teams only
     two losses were to Wyoming Area during the regular season, and then to Selinsgrove during the playoffs.</string>
-    <string name ="awards"> This season the team won the League Championship. AHFH has not won this award in over 20 years.
+    <string name="awards"> This season the team won the League Championship. AHFH has not won this award in over 20 years.
     Also, the team won the sportsmanship award. This award is given out by the refs. They all get together and choose the team who
     the believe had the best sportsmanship towards other teams.</string>
-    <string name = "returnHome"> Would you like to return to the Home Screen?</string>
-    <string name = "numberText">Phone Number</string>
-    <string name = "mapText"> Map</string>
-    <string name = "returnHomeText">Welcome Back To The Home Screen</string>
+    <string name="returnHome"> Would you like to return to the Home Screen?</string>
+    <string name="numberText">Phone Number</string>
+    <string name="mapText"> Map</string>
 </resources>
