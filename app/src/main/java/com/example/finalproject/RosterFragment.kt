@@ -48,14 +48,6 @@ class RosterFragment : Fragment() {
         binding.recyclerView.adapter = mAdaptor
 
 
-//        binding.recyclerView.setOnClickListener() {
-//            val reply = binding.welcome3.text.toString()
-//            setFragmentResult("REQUESTING_REPLY_KEY", bundleOf("REPLY_KEY" to reply))
-//            binding.root.findNavController().navigateUp()
-//        }
-
-
-
 
 
         return rootView

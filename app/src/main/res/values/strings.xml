@@ -28,4 +28,5 @@
     <string name="returnHome"> Would you like to return to the Home Screen?</string>
     <string name="numberText">Phone Number</string>
     <string name="mapText"> Map</string>
+    <string name = "galleryTitle"> Gallery!!!</string>
 </resources>

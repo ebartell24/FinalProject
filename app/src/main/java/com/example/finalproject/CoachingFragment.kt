@@ -8,9 +8,11 @@ import android.provider.Telephony.BaseMmsColumns.SUBJECT
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.ViewModel
+import androidx.navigation.findNavController
 import com.example.finalproject.databinding.FragmentCoachingBinding
 
 
@@ -45,16 +47,21 @@ class CoachingFragment : Fragment() {
             showMap()
         }
 
+        binding.sticks.setOnClickListener(){
+            val action = CoachingFragmentDirections.actionCoachingFragmentToGalleryFragment()
+            rootView.findNavController().navigate(action)
+        }
+
         return rootView
     }
 
-    fun openWebPage(){
+    private fun openWebPage(){
         val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://ahsdathletics.org/main/teamschedule/id/3807358/seasonid/4751470"))
         startActivity(browserIntent)
 
     }
 
-    fun dialPhoneNumber(){
+    private fun dialPhoneNumber(){
         val intent = Intent(Intent.ACTION_DIAL).apply {
             data = Uri.parse("tel:5705855330")
         }
@@ -63,7 +70,7 @@ class CoachingFragment : Fragment() {
         }
     }
 
-    fun composeEmail() {
+    private fun composeEmail() {
         val emailIntent = Intent(
             Intent.ACTION_SENDTO, Uri.fromParts("mailto", "Carrg@ahsd.org", null));
         emailIntent.putExtra(Intent.EXTRA_SUBJECT, "AHFH Field Hockey");
@@ -73,7 +80,7 @@ class CoachingFragment : Fragment() {
         }
     }
 
-    fun showMap() {
+    private fun showMap() {
         val intent = Intent(Intent.ACTION_VIEW).apply {
             data = Uri.parse("geo:41.492974642267725, -75.72510594638094")
         }
