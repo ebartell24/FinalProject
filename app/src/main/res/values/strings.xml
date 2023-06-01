@@ -29,4 +29,7 @@
     <string name="numberText">Phone Number</string>
     <string name="mapText"> Map</string>
     <string name = "galleryTitle"> Gallery!!!</string>
+    <string name ="coachGlenn"> Coach Glenn</string>
+    <string name ="coachz"> Coach Z</string>
+
 </resources>
